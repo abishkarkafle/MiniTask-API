@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using MiniTask_API.Models;
 
 namespace MiniTask_API.Data
 {
@@ -9,6 +10,8 @@ namespace MiniTask_API.Data
         {
             
         }
+        public DbSet<TaskItem> taskItems { get; set; }
+        public DbSet<Category> categories { get; set; }
 
     }
 }
